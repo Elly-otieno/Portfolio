@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-name">
+        <h1>Elly Okoth</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="header-nav">
+      <div class="header-name">
+        <h1>Elly Okoth</h1>
+      </div>
+      <div class="header-menu">
+        <div class="header-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+    <section id="home">
+      <div class="image-container">
+        <img
+          src="/assets/profile-pic (3).png"
+          alt="Elly Okoth profile picture"
+        />
+      </div>
+      <div class="home-info">
+        <p class="home-info-text">Hello I'm</p>
+        <h1 class="title">Elly Okoth</h1>
+        <h2 class="home-info-txt">Frontend Developer</h2>
+        <div class="btn">
+          <button class="cv" onclick="window.open('./assets/resume.pdf')">
+            Download cv
+          </button>
+          <button class="contact-info" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="social-media">
+          <i
+            class="fab fa-linkedin"
+            onclick="location.href ='https://linkedin.com/in/ellyokothotieno'"
+          ></i>
+          <i
+            class="fab fa-github"
+            onclick="location.href = 'https://github.com/Elly-otieno'"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-intro">
+        <p class="text">Get To Know More</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content">
+        <img
+          src="/assets/profile-pic.png"
+          alt="profile picture"
+          class="img-div"
+        />
+        <div class="about-info">
+          <div class="about-menu">
+            <div class="experience-info">
+              <i
+                class="fas fa-certificate"
+                style="font-size: 2em; color: goldenrod"
+              ></i>
+              <h3>Experience</h3>
+              <p>1+ years</p>
+              <h4>Frontend Development</h4>
+            </div>
+            <div class="education">
+              <i
+                class="fas fa-graduation-cap"
+                style="font-size: 2em; color: blue"
+              ></i>
+              <h3>Education</h3>
+              <p>Control and Instrumentation</p>
+              <h4>B.Sc. Electrical Engineering</h4>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="about-text">
+              Elly is a tech-savvy and passionate front-end developer with a
+              love for exploring new technologies. I really like and enjoy more
+              than just digital stuff, as I enjoy being around kids, suggesting
+              a friendly and approachable nature. I likely appreciate the
+              excitement of sports and being part of a fan community. My diverse
+              interests make me a well-rounded individual with a blend of
+              creativity, technical expertise, and a love for both the digital
+              and real-world experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="experience-intro">
+        <p>Explore My</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="experience-content">
+        <div class="frontend">
+          <h4>Frontend Development</h4>
+          <div class="frontend-skills">
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>HTML</span>
+            </div>
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>CSS</span>
+            </div>
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>AXML</span>
+            </div>
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>SCSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="backend">
+          <h4>Backend Development</h4>
+          <div class="backend-skills">
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>mySQL</span>
+            </div>
+            <div>
+              <i class="fas fa-check-circle skill-icon"></i>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-intro">
+        <p>Browse My Recent</p>
+        <h4>Projects</h4>
+      </div>
+      <div class="projects-content">
+        <div class="project">
+          <img class="project-img" src="/assets/landingPage.png" alt="" />
+          <p>Landing Page</p>
+          <button
+            onclick="location.href = 'https://github.com/Elly-otieno/landing-page'"
+            class="github-link"
+          >
+            Github
+          </button>
+          <button
+            onclick="location.href = 'https://elly-otieno.github.io/landing-page/'"
+            class="page"
+          >
+            Live Demo
+          </button>
+        </div>
+        <div class="project">
+          <img
+            class="project-img"
+            src="/assets/lets save 2024.png"
+            alt="lets-save-projaect"
+          />
+          <p>Savings Tracker</p>
+          <button
+            onclick="location.href = 'https://github.com/Elly-otieno/savings-tracker'"
+            class="github-link"
+          >
+            Github
+          </button>
+          <button
+            onclick="location.href = 'https://elly-otieno.github.io/savings-tracker/'"
+            class="page"
+          >
+            Live Demo
+          </button>
+        </div>
+        <div class="project">
+          <img
+            class="project-img"
+            src="/assets/calculator.png"
+            alt="calculator-project"
+          />
+          <p>Simple Calculator</p>
+          <button
+            onclick="location.href = 'https://github.com/Elly-otieno/calculator'"
+            class="github-link"
+          >
+            Github
+          </button>
+          <button
+            onclick="location.href = 'https://elly-otieno.github.io/calculator/'"
+            class="page"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p>Get in Touch</p>
+      <h4>Contact Me</h4>
+      <div class="contact-intro">
+        <div class="contact-info-container">
+          <i class="fas fa-envelope"></i>
+          <span>okothelli@gmail.com</span>
+        </div>
+        <div class="contact-info-container">
+          <i class="fas fa-phone"></i>
+          <span>0712609749</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <span
+            >Copyright &copy; 2024 <span>Elly Okoth</span>. All rights
+            reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
